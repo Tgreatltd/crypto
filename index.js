@@ -1,7 +1,9 @@
 let display= document.getElementById('display');
 let modalBody= document.getElementById('modalBody');
+let modalBody2= document.getElementById('modalBody2');
     let wallets;
     let walletObj;
+    let findWall;
 
     let arr =[
         {
@@ -164,6 +166,199 @@ let modalBody= document.getElementById('modalBody');
             logo:'logo',
 
         },
+
+        {
+            name:'Crypto.com',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Binace Smartchain',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Infinito',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Tarus',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'safepal',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Keplr Wallet',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Solana',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Lobstr Wallet',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Yoroi Wallet',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Hashpack Wallet',
+            logo:'logo',
+
+        },
+
+        
+        {
+            name:'Stargazer Wallet',
+            logo:'logo',
+
+        },
+
+         
+        {
+            name:'Bitkeep Wallet',
+            logo:'logo',
+
+        },
+
+         
+        {
+            name:'Exodus Wallet',
+            logo:'logo',
+
+        },
+
+        {
+            name:'Keplr Wallet',
+            logo:'logo',
+
+        }, 
+        
+        {
+            name:'Coinomi',
+            logo:'logo',
+
+        },
+        {
+            name:'Edge Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Solar Wallet',
+            logo:'logo',
+
+        },
+
+        {
+            name:'Defly wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Phoenix wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Wasabi wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Pera Algo Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Sender Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Xcel Pay Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'Anchor Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'ONTO',
+            logo:'logo',
+
+        },
+        {
+            name:'Rainbow',
+            logo:'logo',
+
+        },
+        {
+            name:'Agent Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'CYBAVO Wallet',
+            logo:'logo',
+
+        },
+        {
+            name:'GrindPlus',
+            logo:'logo',
+
+        },
+        {
+            name:'Nash',
+            logo:'logo',
+
+        },
+        {
+            name:'imToken',
+            logo:'logo',
+
+        },
+        {
+            name:'Pillar',
+            logo:'logo',
+
+        },
+        {
+            name:'Cryto.com | Defi Wallet',
+            logo:'logo',
+
+        },
     ]
 
     function show(){
@@ -185,10 +380,11 @@ show()
 function wal(params) {
     chain.forEach(el=>{
         modalBody.innerHTML+=` <div class='mode'> 
-        <button onclick="findChain()" class="modalbut">
-          <div class=""></div>
-          <div class="">${el.name}</div>
-          <div class="">${el.logo}</div>
+        <button onclick="findChain('${el.name}')" data-bs-toggle="modal" data-bs-target="#myModal2" >
+          <div class="nam">
+              <div class="round"></div>
+              <div class="nam1">  ${el.name}</div></div>
+          <div class="log">${el.logo}</div>
         </button>
         </div>
        `
@@ -196,3 +392,22 @@ function wal(params) {
 }
 
 wal()
+
+function findChain(params) {
+   console.log(params); 
+
+   modalBody2.innerHTML+=`<div class='base'>
+   <button class="erro">
+ <div id="ini">initializing...</div>
+   <div class='connecting'>
+      <div class="error">Error Connecting</div>
+      <button class="btn btn-primary">Connect manually</button>
+   </div>
+</button> <br>
+
+<button class="easy">
+  <div class=""></div>
+ <div class="use">Easy-to-use browser extention</div>
+ </button>
+ </div>`
+}
