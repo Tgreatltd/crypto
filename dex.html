@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="display" id="display">
+            <h1>connect to wallet</h1>
+            <div class="display1" id="display1"></div>
+        </div>
+        
+
+
+<div class="div" id="display2"></div>
+
+    </div>
+</body>
+
+</html>
+<script>
+
+let display1= document.getElementById('display1');
+let display2= document.getElementById('display2');
+let walletObj;
+let wall;
+
+let wallet = [
+    {
+        name:'metamask',
+        price:300
+    },
+    {
+        name:'trustwallet',
+        price:600
+    },
+    {
+        name:'coinbase',
+        price:700
+    },
+    {
+        name:'blockchain',
+        price:900
+    }
+]
+
+
+// for (let index = 0; index < wallet.length; index++) {
+//      display1.innerHTML += wallet[index].name;
+    
+// }
+
+function show(){
+    wall= wallet.forEach(el=>{
+    display1.innerHTML+=`<button onclick="findWallet('${el.name}')">
+    <div class="dis">${el.name}</div>
+    <div class="dis">${el.price}</div>
+</button> <br>`
+})
+}
+
+show()
+
+
+function findWallet(params) {
+   walletObj=wallet.find(el=>{
+   return el.name==params
+   }) 
+
+   display2.innerHTML+=` 
+   <div class="disp">
+       <div>${walletObj.name}</div>
+       <div>${walletObj.price}</div>
+    </div>
+   
+    `
+
+}
+
+
+
+
+// walletObj=wallet.find(el=>{
+//     if (wallet.name=='metamask') {
+        
+//     }
+// })
+
+</script>

@@ -1,43 +1,427 @@
-.display{
-    height: 70vh;
-    width: 30%;
-    border: 2px solid black;
-}
-
-.display1{
-    /* margin-right: 50px; */
-}
-.dis{
-
-    /* display: flex; */
-    margin-right: 50px;
-
+body {
+    /* background-image:url(./images/blockchain4.jpg), linear-gradient(blue, red);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position:center; */
+    /* background-image: linear-gradient(to left, #111827); */
+    /* background-color: #111827; */
 
 }
 
-button{
-    border: none;
-    background: none;
-    outline: none;
+* {
+    /* background-color: #111827; */
+}
+
+.contain {
+    /* padding: 40px; */
+
+    background-color: #111827;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+
+
+.contain1 {
+    height: 60vh;
+    width: 100%;
+    /* background-color: #1b2f5a; */
+    padding: 50px;
+    /* padding-top: 40px; */
+    margin-bottom: 50px;
+}
+
+.mages {
     display: flex;
-width: 90%;
-height: 100px;
-background-color: rgb(255, 112, 112);
-align-items: center;
-justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
-.div{
-    height: 200px;
+.blockchain {
+    margin-right: 50px;
+    width: 60%;
+}
+
+.block {
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.chain {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+}
+
+.chain2 {
+    margin-bottom: 50px;
+}
+
+
+.mages button {
+    height: 50px;
     width: 200px;
-    border: 1px solid black;
-    /* display: none; */
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.img {
+    /* width: 30%; */
+}
+
+.image {
+    width: 450px;
+    height: 300px;
+    /* margin-top: -100px; */
+}
+
+
+.select {
+    width: 100%;
+    padding: 50px;
+}
+
+.make {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+
+.button {
+    outline: none;
+    background: none;
+    color: white;
+    height: 24vh;
+    width: 31%;
+    border: 1px solid gray;
     /* display: flex; */
+    /* justify-content: center; */
+    margin-right: 5px;
+    background-color: #1B2433;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-align: left;
     padding: 20px;
 }
 
-.disp{
-    display: flex;
-    justify-content: space-between;
+
+#display {
+    width: 100%;
+    background-color: #111827;
+    padding: 50px;
+
+}
+
+#display1 {
+
+    width: 100%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.logo {
     margin-bottom: 20px;
 }
+
+.name {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.click {
+    font-size: 16px;
+    color: rgb(156, 163, 175);
+    line-height: 25px;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #1a1d24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width:1383px) {
+    .contain1 {
+        height: 100%;
+    }
+
+    .button {
+        height: 250px;
+    }
+}
+
+@media(max-width:1107px) {
+    .block {
+        font-size: 40px;
+    }
+
+    .chain {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1057px) {
+
+    .body {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .block {
+        font-size: 40px;
+    }
+
+    .chain {
+        font-size: 13px;
+    }
+
+    .image {
+        width: 350px;
+        height: 350px;
+
+    }
+
+}
+
+@media(max-width:934px) {
+
+    .block {
+        font-size: 40px;
+    }
+
+    .chain {
+        font-size: 15px;
+    }
+
+    .image {
+        width: 300px;
+        height: 200px;
+
+    }
+
+}
+
+@media(max-width:886px) {
+    .block {
+        font-size: 40px;
+    }
+
+    .chain {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .image {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .mages button {
+        width: 150px;
+        height: 100%;
+        font-size: 16px;
+    }
+    .make{
+        font-size: 25px;
+    }
+    .dis{
+        /* text-align: center; */
+    }
+    .button{
+        width: 29%;
+        height: 270px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:783px) {
+
+    * {
+        /* text-align: center; */
+    }
+
+    .blockchain {
+        margin-bottom: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chain {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .class {
+        /* width: 100%; */
+        text-align: center;
+    }
+
+    .mages {
+        display: block;
+        text-align: center;
+    }
+
+    .image {
+        width: 400px;
+        height: 300px;
+    }
+
+    .make {
+        /* text-align: center; */
+        font-size: 20px;
+    }
+
+    .button {
+        width: 90%;
+        height: 160px;
+        text-align: left;
+        font-size: 13px;
+    
+    }
+    .button a{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:501px){
+.image{
+    /* text-align: center; */
+   margin-left: -50px;
+
+}
+
+}
+
+@media(max-width:588px){
+    .button{
+      height: 100%;
+    }
+  }
+
+@media(max-width:434px) {
+    .contain1 {
+        padding: 5px;
+    }
+
+    .blockchain {
+        margin-bottom: 40px;
+    }
+
+    .class {
+        text-align: ce;
+        padding: 5px;
+        width: 100%;
+        /* background-color: red; */
+        /* margin-left: 10px; */
+    }
+
+    .mages button {
+        width: 180px;
+        /* text-align: left; */
+        margin-top: 0;
+        height: 50px;
+
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+@media(max-width:414px) {
+
+
+    .class {
+        text-align: center;
+        /* padding: 5px; */
+        width: 100%;
+        /* background-color: red; */
+        /* margin-left: 39px; */
+        /* padding: 10px; */
+    }
+
+    .mages button {
+        width: 150px;
+        /* text-align: left; */
+        margin-top: 0;
+        height: 50px;
+
+    }
+}
+
+@media(max-width:354px) {
+
+
+    .class {
+        text-align: center;
+        /* padding: 5px; */
+        width: 100%;
+        /* background-color: red; */
+        /* margin-left: 39px; */
+        /* padding: 10px; */
+    }
+
+    .mages button {
+        width: 120px;
+        /* text-align: left; */
+        margin-top: 0;
+        height: 55px;
+
+    }
+}
+
+
+@media(max-width:294px) {
+
+
+    .class {
+        text-align: center;
+        /* padding: 5px; */
+        width: 100%;
+        /* background-color: red; */
+        /* margin-left: 39px; */
+        /* padding: 10px; */
+    }
+
+    .mages button {
+        width: 100px;
+        /* text-align: left; */
+        margin-top: 0;
+        height: 55px;
+
+    }
+}
+
+
+

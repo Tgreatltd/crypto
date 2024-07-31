@@ -1,0 +1,43 @@
+.display{
+    height: 70vh;
+    width: 30%;
+    border: 2px solid black;
+}
+
+.display1{
+    /* margin-right: 50px; */
+}
+.dis{
+
+    /* display: flex; */
+    margin-right: 50px;
+
+
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+width: 90%;
+height: 100px;
+background-color: rgb(255, 112, 112);
+align-items: center;
+justify-content: center;
+}
+
+.div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    /* display: none; */
+    /* display: flex; */
+    padding: 20px;
+}
+
+.disp{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
