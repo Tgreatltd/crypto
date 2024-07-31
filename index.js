@@ -394,13 +394,17 @@ function wal(params) {
 wal()
 
 function findChain(params) {
+   
+   findWall = chain.find(el=>{
+    return el.name ==params
+   })
    console.log(params); 
-
-   modalBody2.innerHTML+=`<div class="base">
+   console.log(findWall);
+   modalBody2.innerHTML=`<div class="base">
       <div class="inside">
          <div>
           <div id="ini">initializing...</div>
-          <div class='connecting'>
+          <div class='connecting' id='connecting'>
              <div class="error">Error Connecting</div>
              <button class="btn btn-primary">Connect manually</button>
           </div>
@@ -409,9 +413,12 @@ function findChain(params) {
    
       <div class="inside">
        <div>
-        <div class="names">coinbase</div>
-       <div class="use">Easy-to-use browser extention</div>
+        <div class="names">${findWall.name}</div>
+        <div class='browser'>
+           <div class="use">Easy-to-use browser extention</div>
+           <div class="use">${findWall.logo}</div>
        </div>
+        </div>
       </div>
    </div>`
 }
