@@ -1,4 +1,5 @@
 let display= document.getElementById('display');
+let modalBody= document.getElementById('modalBody');
     let wallets;
     let walletObj;
 
@@ -138,6 +139,33 @@ let display= document.getElementById('display');
 
     ]
 
+
+    let chain =[
+        {
+            name:'Metamask',
+            logo:'logo',
+
+        },
+
+        {
+            name:'Trust',
+            logo:'logo',
+
+        },
+
+        {
+            name:'Coinbase',
+            logo:'logo',
+
+        },
+
+        {
+            name:'Blockchain',
+            logo:'logo',
+
+        },
+    ]
+
     function show(){
 
  wallets = arr.forEach(el=>{
@@ -153,3 +181,18 @@ let display= document.getElementById('display');
 }
 
 show()
+
+function wal(params) {
+    chain.forEach(el=>{
+        modalBody.innerHTML+=` <div class='mode'> 
+        <button onclick="findChain()" class="modalbut">
+          <div class=""></div>
+          <div class="">${el.name}</div>
+          <div class="">${el.logo}</div>
+        </button>
+        </div>
+       `
+    })
+}
+
+wal()
