@@ -228,15 +228,48 @@ nav {
     outline: none;
 }
 
+#modalBody2{
+    width: 100%;
+}
+
 .base{
-  width: 100%;  
+  width: 100%;
+  /* background-color: blue;   */
+ 
+}
+
+.inside{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.inside2{
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    align-items: center;
+    height: 10vh;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.connecting{
+    display: flex;
 }
 .erro{
     width: 100%;
-    background: none;
+    /* background: red; */
     border: none;
     outline: none;
     margin-bottom: 50px;
+    height: 60px;
 }
 .error{
     color: red;
@@ -246,6 +279,18 @@ nav {
 .ini{
     color: red;
 }
+
+.easy{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+
+
+
+
 
 
 @media(max-width:1383px) {

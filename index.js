@@ -396,18 +396,22 @@ wal()
 function findChain(params) {
    console.log(params); 
 
-   modalBody2.innerHTML+=`<div class='base'>
-   <button class="erro">
- <div id="ini">initializing...</div>
-   <div class='connecting'>
-      <div class="error">Error Connecting</div>
-      <button class="btn btn-primary">Connect manually</button>
-   </div>
-</button> <br>
-
-<button class="easy">
-  <div class=""></div>
- <div class="use">Easy-to-use browser extention</div>
- </button>
- </div>`
+   modalBody2.innerHTML+=`<div class="base">
+      <div class="inside">
+         <div>
+          <div id="ini">initializing...</div>
+          <div class='connecting'>
+             <div class="error">Error Connecting</div>
+             <button class="btn btn-primary">Connect manually</button>
+          </div>
+         </div>
+      </div>
+   
+      <div class="inside">
+       <div>
+        <div class="names">coinbase</div>
+       <div class="use">Easy-to-use browser extention</div>
+       </div>
+      </div>
+   </div>`
 }
