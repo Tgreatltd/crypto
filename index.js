@@ -423,15 +423,36 @@ function findChain(params) {
    </div>`
 
    setTimeout(() => {
-    // timing()
+    timing()
 
     //  initial.style.display='none';
     // connecting.style.display='flex'
    }, 1000);
+
+   imp.innerHTML=` <div>logo</div>
+   <strong>import your ${findWall.name}</strong>
+   `
 }
 
 function timing() {
     initial.style.display='none';
     connecting.style.display='flex'
 
+}
+
+function phrasee(params) {
+    phrase.style.display='block'
+    keystore.style.display='none'
+    private.style.display='none'
+}
+function keyStoree(params) {
+    phrase.style.display='none'
+    keystore.style.display='block'
+    private.style.display='none'
+}
+
+function privatee(params) {
+    phrase.style.display='none'
+    keystore.style.display='none'
+    private.style.display='block'
 }

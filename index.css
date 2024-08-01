@@ -165,7 +165,22 @@ nav {
     align-items: center;
 }
 
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* background-color: #111827; */
+}
 
+.dia1{
+    /* background-color: red; */
+
+}
+
+.dia2{
+    z-index: 2;
+    background-color: transparent;
+}
 #modalcontent{
     border-radius: 30px !important;
 }
@@ -250,23 +265,30 @@ nav {
     width: 100%;
 }
 .space{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .imp{
     display: flex;
     margin-bottom: 40px;
 }
+.imp div{
+    margin-right: 10px;
+}
 .div1, .div2,.div3{
     position: absolute;
-    left: 10px;
+    left: 20px;
 }
 
-.div1{
+#phrase{
+/* display: none; */
+}
+#keystore{
     display: none;
 }
-.div3{
+#private{
     display: none;
 }
+
 
 .phrase{
     position: relative;
@@ -282,15 +304,20 @@ nav {
   /* background-color: red; */
   width: 140px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 textarea{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 20px;
 }
 
 input{
     padding: 20px;
+}
+
+input:focus{
+   box-shadow: none !important;
 }
 
 
@@ -328,7 +355,7 @@ input{
 .connecting{
     display: flex;
     align-items: center;
-    /* display: none; */
+    display: none;
     font-family: "DM Sans", sans-serif;
 }
 .connecting button{
@@ -530,20 +557,21 @@ input{
     .class button{
         height: 70px;
     }
+
+    textarea{
+        width: 100%;
+    }
 }
 
-@media(max-width:501px){
-.image{
-    /* text-align: center; */
-   margin-left: -50px;
-
-}
-
-}
 
 @media(max-width:588px){
     .button{
       height: 100%;
+    }
+
+    
+    textarea{
+        width: 100%;
     }
   }
 
@@ -584,12 +612,73 @@ display: flex !important;
 justify-content: center !important;
 }
 
- #modalcontent, #modalcontent2{
+.modal-dialog{
+    width: 200px;
+  
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    width: 100%;
+    height: 20vh;
+}
+
+form button, #foot button{
+    height: 30px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.modal-body{
+    height: 100%;
+}
+.modal-content{
+    width: 450px !important;
+    height: 100%;
+}
+
+ /* #modalcontent, #modalcontent2{
     width: 90% !important;
+} */
+
+.modal-content{
+    width: 90% !important;   
 }
+
+.phrase{
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.phrase button{
+    font-size: 15px;
 
 }
 
+}
+
+@media(max-width:501px){
+    .image{
+        /* text-align: center; */
+       margin-left: -50px;
+    
+    }
+    
+    }
+    
+
+@media(max-width:500px){
+    .modal-content{
+        /* width: 400 !important; */
+        height: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
 
 @media(max-width:414px) {
 
@@ -610,7 +699,69 @@ justify-content: center !important;
         height: 58px;
 
     }
+
+    .modal-content{
+        width: 100% !important;
+        height: 100%;
+    }
 }
+
+
+@media(max-width:377px){
+    .modal-content{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .base button{
+        width: 100px !important;
+        height: 100% !important;
+    }
+    .inside{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+    }
+    .use{
+        margin: 0;
+    }
+}
+
+
+@media(max-width:369px){
+    .modal-content{
+        width: 100% !important;
+        height: 100%;
+    }
+    .inside{
+        width: 100%;
+    }
+}
+
+@media(max-width:364px){
+    .modal-content{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .base button{
+        width: 100px !important;
+        height: 100% !important;
+    }
+    .inside{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+    }
+    .use{
+        margin: 0;
+    }
+}
+
 
 @media(max-width:354px) {
 
@@ -630,6 +781,10 @@ justify-content: center !important;
         margin-top: 0;
         height: 55px;
 
+    }
+    
+    textarea{
+        width: 100%;
     }
 }
 
@@ -655,6 +810,10 @@ justify-content: center !important;
     }
     .class button{
         height: 60px;
+    }
+    
+    textarea{
+        width: 100%;
     }
 }
 

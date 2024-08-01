@@ -42,8 +42,8 @@
             </div>
 
             <!-- The Modal -->
-            <div class="modal" id="myModal" style="color: black;">
-              <div class="modal-dialog" id="diag">
+            <div class="modal modal1" id="myModal" style="color: black;">
+              <div class="modal-dialog dia1" id="diag1">
                 <div class="modal-content" id="modalcontent">
                   <!-- Modal Header -->
                   <div class="modal-header" id="modalheader">
@@ -69,8 +69,8 @@
 
             <!-- second modal -->
 
-            <div class="modal" id="myModal2" style="color: black;">
-              <div class="modal-dialog" id="diag2">
+            <div class="modal modal2" id="myModal2" style="color: black;">
+              <div class="modal-dialog dia2" id="diag2">
                 <div class="modal-content" id="modalcontent2">
                   <!-- Modal Header -->
                   <div class="modal-header alert alert-info" id="modalheader2">
@@ -95,8 +95,8 @@
 
             <!-- third modal -->
 
-            <div class="modal" id="myModal3" style="color: black;">
-              <div class="modal-dialog" id="diag3">
+            <div class="modal modal3" id="myModal3" style="color: black;">
+              <div class="modal-dialog dia3" id="diag3">
                 <div class="modal-content" id="modalcontent3">
                   <!-- Modal Header -->
                   <div class="modal-header alert alert-info" id="modalheader2">
@@ -110,45 +110,61 @@
                   <div class="modal-body" id="modalBody3">
                        <div class="space"></div>
                        <div class="import">
-                          <div class="imp">
-                            <div>logo</div>
-                            <strong>import your wallet</strong>
+                          <div class="imp" id="imp">
+                           
+                           <!-- <div id="port"></div> -->
                           </div>
-                         <form action="">
+                        
                           <div class="phrase">
-                            <button>Phrase
+                            <button onclick="phrasee()">Phrase </button>
+                            <button onclick="keyStoree()">Keystore JSON </button>
+                            <button onclick="privatee()">Private Key </button>
+                          </div>
+                         
+                          <form action="">
+                            <div class="form-group" id="phrase">
+                              <textarea name="" id="" cols="53" rows="5" placeholder="Enter Your Recovery Phrase Here" required></textarea>
+                              <div class="form-group">
+                                <button class="btn btn-primary form-control mt-3">Connect</button>
+                              </div>
+                            </div>
+  
+                          </form>
 
-                             
-                            </button>
-                            <button>Keystore JSON
 
+                          <form action="">
+                            <div class="form-group" id="keystore">
+                              <textarea name="" id="" cols="53" rows="5" placeholder="Enter Your Keystore Json" required></textarea><br><br>
+                              <input type="text" placeholder="Wallet Password" class="form-control" required>
+                              <div class="form-group">
+                                <button class="btn btn-primary form-control mt-3">Connect</button>
+                              </div>
+                            </div>
+                          </form>
+
+
+                          <form action="">
+                            <div class="form-group" id="private">
+                            <input type="text" placeholder="Enter Your Priavte Key" class="form-control" required><br>
+                            <small>Typically 64 characters with space.</small>
+                            <div class="form-group">
+                              <button class="btn btn-primary form-control mt-3">Connect</button>
+                            </div>
+                          </div>
+                      
+                          </form>
                             
-                            </button>
-                            <button>Private Key
+                          
+                         
 
-                              
-                            </button>
-                          </div>
-
-                          <div class="div1" id="phrase">
-                            <textarea name="" id="" cols="49" rows="5" placeholder="Enter Your Recovery Phrase Here"></textarea>
-                          </div>
-
-                          <div class="div2" id="keystore">
-                            <textarea name="" id="" cols="49" rows="5" placeholder="Enter Your Keystore Json"></textarea>
-                            <input type="text" placeholder="Wallet Password" class="form-control">
-                          </div>
-
-                          <div class="div3" id="private">
-                            <input type="text" placeholder="Enter Your Priavte Key" class="form-control">
-                          </div>
-                         </form>
+                          
+                        
                        </div>
                   </div>
 
                   <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                  <div class="modal-footer" id="foot">
+                    <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#myModal">Cancel</button>
                   </div>
 
                 </div>
