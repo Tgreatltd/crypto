@@ -401,12 +401,12 @@ function findChain(params) {
    console.log(params); 
    console.log(findWall);
    modalBody2.innerHTML=`<div class="base">
-      <div class="inside">
+      <div class="inside" id='inside'>
          <div>
-          <div id="ini">initializing...</div>
+          <div id="initial">initializing...</div>
           <div class='connecting' id='connecting'>
              <div class="error">Error Connecting</div>
-             <button class="btn btn-primary">Connect manually</button>
+             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">Connect manually</button>
           </div>
          </div>
       </div>
@@ -416,9 +416,22 @@ function findChain(params) {
         <div class="names">${findWall.name}</div>
         <div class='browser'>
            <div class="use">Easy-to-use browser extention</div>
-           <div class="use">${findWall.logo}</div>
+           <div class="use1">${findWall.logo}</div>
        </div>
         </div>
       </div>
    </div>`
+
+   setTimeout(() => {
+    // timing()
+
+    //  initial.style.display='none';
+    // connecting.style.display='flex'
+   }, 1000);
+}
+
+function timing() {
+    initial.style.display='none';
+    connecting.style.display='flex'
+
 }
