@@ -170,7 +170,18 @@ nav {
     top: 50%;
     left: 50%;
     /* background-color: #111827; */
+
 }
+
+
+
+.modal2{
+   
+    /* height: 100%;
+    position: absolute !important;
+    top: 25% !important; */
+}
+
 
 .dia1{
     /* background-color: red; */
@@ -261,7 +272,7 @@ nav {
 }
 
 #modalBody3{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 }
 .space{
@@ -277,6 +288,17 @@ nav {
 .div1, .div2,.div3{
     position: absolute;
     left: 20px;
+}
+
+#can{
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+
 }
 
 #phrase{
@@ -573,6 +595,10 @@ input:focus{
     textarea{
         width: 100%;
     }
+
+    #can{
+        /* width: 400px; */
+    }
   }
 
 @media(max-width:434px) {
@@ -701,7 +727,7 @@ form button, #foot button{
     }
 
     .modal-content{
-        width: 100% !important;
+        width: 90% !important;
         height: 100%;
     }
 }
@@ -709,30 +735,31 @@ form button, #foot button{
 
 @media(max-width:377px){
     .modal-content{
-        width: 100% !important;
+        width: 90% !important;
         height: 100%;
     }
 
     .base button{
-        width: 100px !important;
-        height: 100% !important;
+        width: 120px !important;
+        height: 40px !important;
+        font-size: 12px;
     }
     .inside{
         width: 100%;
-        margin: 0;
-        padding: 0;
         display: flex;
         justify-content: left;
+        height: 60px;
     }
     .use{
         margin: 0;
     }
+    
 }
 
 
 @media(max-width:369px){
     .modal-content{
-        width: 100% !important;
+        width: 90% !important;
         height: 100%;
     }
     .inside{
@@ -740,9 +767,9 @@ form button, #foot button{
     }
 }
 
-@media(max-width:367px){
+@media(max-width:358px){
     .modal-content{
-        width: 100% !important;
+        width: 90% !important;
         height: 100%;
     }
 
@@ -750,19 +777,11 @@ form button, #foot button{
         width: 100px !important;
         height: 100% !important;
     }
-    .inside{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: left;
-    }
+    
     .use{
         margin: 0;
     }
-    .use1{
-        margin-left: -40px;
-    }
+    
 }
 
 
